@@ -1,21 +1,24 @@
 <script>
+    export default {
+        props: ['item']
+    }
 </script>
 
 <template>
     <div class="col-1-3">
         <div class="card-header">
-            <img src="/1.webp" alt="">
+            <img :src="item.frontImage" alt="">
             <span class="heart-badge">&hearts;</span>
             <div>
                 <span class="badge badge-green">Sostenibilità</span>
                 <span class="badge badge-red">-50%</span>
             </div>
-            <img src="/1b.webp" class="hover-image">
+            <img :src="item.backImage" class="hover-image">
         </div>
         <div class="card-body">
-            <p class="text-small">Levi's</p>
-            <h5>RELAXED FIT TEE UNISEX</h5>
-            <p> <span class="text-small price">14,99 &euro; </span><span class="text-small line-through">29,99 &euro;</span></p>
+            <p class="text-small">{{item.brand}}</p>
+            <h5>{{item.name}}</h5>
+            <p> <span class="text-small price">{{item.price}} &euro; </span><span class="text-small line-through">29,99 &euro;</span></p>
         </div>
     </div>
 </template>

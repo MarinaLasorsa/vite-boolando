@@ -120,7 +120,7 @@
     <main class="page-content">
         <div class="container"> 
             <div class="row"> 
-                <AppCard v-for="(card, i) in products" :key="i"/>
+                <AppCard v-for="(card, i) in products" :item="card" :key="i"/>
                 <!--<div class="col-1-3">
                     <div class="card-header">
                         <img src="/2.webp" alt="">
