@@ -5,21 +5,19 @@
 </script>
 
 <template>
-    <div class="col-1-3">
-        <div class="card-header">
-            <img :src="item.frontImage" alt="">
-            <span class="heart-badge">&hearts;</span>
-            <div>
-                <span class="badge badge-green">Sostenibilità</span>
-                <span class="badge badge-red">-50%</span>
-            </div>
-            <img :src="item.backImage" class="hover-image">
+    <div class="card-header">
+        <img :src="item.frontImage" alt="">
+        <span class="heart-badge">&hearts;</span>
+        <div>
+            <span class="badge badge-green">Sostenibilità</span>
+            <span class="badge badge-red">-50%</span>
         </div>
-        <div class="card-body">
-            <p class="text-small">{{item.brand}}</p>
-            <h5>{{item.name}}</h5>
-            <p> <span class="text-small price">{{item.price}} &euro; </span><span class="text-small line-through">29,99 &euro;</span></p>
-        </div>
+        <img :src="item.backImage" class="hover-image">
+    </div>
+    <div class="card-body">
+        <p class="text-small">{{item.brand}}</p>
+        <h5>{{item.name}}</h5>
+        <p> <span class="text-small price">{{item.price}} &euro; </span><span class="text-small line-through">29,99 &euro;</span></p>
     </div>
 </template>
 
