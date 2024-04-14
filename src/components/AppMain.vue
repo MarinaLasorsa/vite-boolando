@@ -9,7 +9,7 @@ export default {
     data() {
         return {
             store,
-            products: [
+            /*products: [
                 {
                     "id": 1,
                     "frontImage": "1.webp",
@@ -112,7 +112,7 @@ export default {
                         }
                     ]
                 }
-            ]
+            ]*/
         }
     }
 }
@@ -122,7 +122,7 @@ export default {
     <main class="page-content">
         <div class="container">
             <div class="row">
-                <div v-for="(card, i) in products" :key="i" class="col-1-3">
+                <div v-for="(card, i) in store.products" :key="i" class="col-1-3">
                     <AppCard :item="card" />
                 </div>
             </div>
